@@ -1,0 +1,28 @@
+# Create an application which asks the user for an input for a maths mark, a chemistry mark and a physics mark.
+# If the percentage is below 40%, print “You failed”
+# If the percentage is 40% or higher, print “D”
+# If the percentage is 50% or higher, print “C”
+# If the percentage is 60% or higher, print “B”
+# If the percentage is 70% or higher, print “A” \n
+# MARKS = X/100
+
+maths_mark = int(input("Enter your Maths mark: "))
+chem_mark = int(input("Enter your Chemistry mark: "))
+physics_mark = int(input("Enter your Physics mark: "))
+print()
+
+overall_percentage = (maths_mark + chem_mark + physics_mark)/3
+print(f"Overall percentage = {overall_percentage}")
+print()
+if overall_percentage < 40:
+    print("You failed")
+elif overall_percentage <= 49:
+    print("D")
+elif overall_percentage <= 59:
+    print("C")
+elif overall_percentage <= 69:
+    print("B")
+elif overall_percentage >= 70:
+    print("A")
+else:
+    print("Invalid")
