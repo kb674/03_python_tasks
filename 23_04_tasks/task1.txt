@@ -1,0 +1,31 @@
+my_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+print("Write a program that prints out all the elements of the list that are less than 5.")
+for each_item in my_list:
+    if each_item < 5:
+        print(each_item)
+print()
+
+print("Make a new list that has all the elements less than 5 from this list in it and print out this new list.")
+list2 = []
+for each_item in my_list:
+    if each_item < 5:
+        list2.append(each_item)
+print(list2)
+print()
+
+print("Write this in just one line of Python using list comprehension.")
+list3 = [each_item for each_item in my_list if each_item < 5]
+print(list3)
+print()
+
+print("Ask the user for a number and return a list that contains only elements from the original list "
+      "\nthat are smaller than the given number.")
+
+user_number = int(input("Enter a number: \n"))
+list4 = []
+for i in my_list:
+    if i < user_number:
+        list4.append(i)
+
+print(list4)

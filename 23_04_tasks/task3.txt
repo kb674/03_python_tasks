@@ -1,0 +1,16 @@
+# Let’s say I give you a list my_list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100].
+# Write one line of Python that takes this list
+# and makes a new list that has only the even elements of this list in it.
+
+my_list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+even_list = []
+odd_list = []
+
+for each_item in my_list:
+    if each_item % 2 == 0:
+        even_list.append(each_item)
+    else:
+        odd_list.append(each_item)
+
+print(f"Even numbers = {even_list}")
+print(f"Odd numbers = {odd_list}")
