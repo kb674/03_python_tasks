@@ -1,1 +1,3 @@
+Python exercises: 
 
+1) https://gitlab.com/qacdevops/python-exercises/-/tree/master/
