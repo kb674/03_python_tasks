@@ -1,0 +1,30 @@
+# Create a new python file. In that file create a program that works out a grade based on marks with the use of functions.
+# The program should take the students name, Homework(/25) score, Assessment(/50) score and Final Exam(/100) score as inputs, and output their name and final ICT grade as a percentage.
+# Stretch goal: Include grade boundaries such that the program also outputs a grade for the student (A, B, etc.)
+
+name = input("Enter you name: ")
+homework = int(input("Give your homework score: "))
+assessment = int(input("Give your assessment score: "))
+final_exam = int(input("Give your final exam score: "))
+
+def percentage():
+    return ((homework + assessment + final_exam)/175)*100
+
+mark = int(percentage())
+
+def grade():
+    if mark >= 70:
+        return "A"
+    elif mark >= 60:
+        return 'B'
+    elif mark >= 50:
+        return "C"
+    elif mark >= 40:
+        return "D"
+    elif mark < 40:
+        return "Fail"
+    else:
+        return "invalid"
+
+print(f"Hi {name}, your overall score is {mark}%. That is a '{grade()}'.")
+
