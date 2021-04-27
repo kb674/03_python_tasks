@@ -1,0 +1,21 @@
+# Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.
+# Stretch 1: Add on to the previous program by asking the user for another number and printing out that many copies of the previous message.
+# Stretch 2: Print the repeated messages on new lines.
+
+from typing import final
+
+
+def hundred():
+    name = str(input('What is you name?\n'))
+    age = int(input('What is your age?\n'))
+    repeat = int(input('How many times would you like to repeat the message?\n'))
+
+    final_year = (100 - age) + 2021
+    message = f"Hi {name}, you will turn 100 in the year {final_year}!"
+    count = 0
+
+    for count in range (0, repeat):
+        print(f"{message}")
+   
+
+hundred()
