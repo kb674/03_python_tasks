@@ -1,0 +1,12 @@
+#Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
+
+def pal():
+    word = str(input("Hey there, enter a word: "))
+    word_list = list(word)
+    word_list_rev = list(reversed(word))
+    if word_list == word_list_rev:
+        return "We got a palindrome!"
+    else:
+        return "Not a palindrome, mate"
+
+print(pal())
