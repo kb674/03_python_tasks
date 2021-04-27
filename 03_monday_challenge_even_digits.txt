@@ -1,0 +1,16 @@
+# Write a function that takes two integers as arguments.
+# Finds all numbers between them (both included) where each digit of the number is an even number.
+# For example, for arguments 10 and 30, the function should give you numbers 20, 22, 24, 26 and 28, as they're the only numbers between 10-30 where all digits are even.
+# The numbers obtained should be returned as a comma-separated string on a single line.
+
+def even_digits(a, b):
+    my_list = []
+    for each_number in range(a,b+1):
+        if each_number % 2 == 0:
+            my_list.append(str(each_number))
+    
+    x = ', '.join(my_list)
+    return x
+
+print(even_digits(10, 30))
+
