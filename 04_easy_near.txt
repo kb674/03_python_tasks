@@ -1,0 +1,27 @@
+# Create a function that when given two strings of letters, determine whether the second can be made from the first by removing one letter. 
+# The remaining letters must stay in the same order.
+
+def near(a, b):
+    list_a = []
+    list_b = []
+
+    for each_letter in a:
+        list_a.append(str(each_letter)) 
+        set_a = set(list_a)
+        x = ''.join(set_a)
+
+    
+    for each_letter_2 in b:
+        list_b.append(str(each_letter_2))
+        set_b = set(list_b)
+        y = ''.join(set_b)
+    
+    if x == y:
+        return True
+    else:
+        return False
+
+print(near('reset','rest'))
+print(near('dragoon','dragon'))
+print(near('eave','leave'))
+print(near('sleet','lets'))
